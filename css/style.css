@@ -2,8 +2,53 @@
     font-family: "FFF Forward Regular";
 }
 
+.option {
+	font-size: 10px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-transform: uppercase;
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    width: 120px;
+    background-color: rgba(0,0,0,.3);
+    text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020;
+}
+
+.optionBackHair {
+	font-size: 10px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-transform: uppercase;
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    width: 120px;
+	height: 44;
+    background-color: rgba(0,0,0,.3);
+    text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020;
+}
+
 .dropdown {
-	padding: 5px;
-    color: #353535;
+	padding: 0px;
+    color: #595959;
 	font-family: "FFF Forward Regular";
+	background-color: #b2b2b2;
+	border-radius: 4px;
+	border: 2px solid rgba(0,0,0,.2);
+	font-size: 11px;
 }
