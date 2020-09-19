@@ -1,1 +1,13 @@
-style
+@font-face {
+    font-family: 'fff_forwardregular';
+    src: url('gamefont-webfont.woff2') format('woff2'),
+         url('gamefont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.dropdown {
+	padding: 5px;
+    color: #353535;
+}
