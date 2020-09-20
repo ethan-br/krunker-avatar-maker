@@ -6,12 +6,36 @@
 
 .avatar {
 	float: left;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.image {
+	border-radius: 4px;
 }
 
 .row {
 	float: none;
+}
+
+.optionTop {
+	font-size: 10px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-transform: uppercase;
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    width: 120px;
+    background-color: rgba(0,0,0,.3);
+    text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020;
+	float: left;
 }
 
 .option {
@@ -64,4 +88,10 @@
 	border-radius: 4px;
 	border: 2px solid rgba(0,0,0,.2);
 	font-size: 11px;
+}
+
+.tickBoxLabel {
+	 color: #595959;
+	 text-shadow: none;
+	 font-size: 11px;
 }
