@@ -5,136 +5,149 @@
 	</head>
 	<title>Krunker Avatar Maker by Haptikal</title>
 	<body>
-		<div id="avatar" class="avatar">
+		<div id="avatar" class="avatar inlineBlock">
+			<img src="https://brianperry.co.nz/wp-content/uploads/2018/01/400x400.png" alt="400x400">
         </div>
-		<div id="menus" class="menus">
-			<div id="skin" class="option skin" >
-				Skin Color
-				<select name="skinSelect" class="dropdown">
-					<option value="white">White</option>
-					<option value="tan">Tan</option>
-					<option value="sunburnt">Sunburnt</option>
-					<option value="black">Black</option>
-					<option value="alien">Alien</option>
-					<option value="infected">Infected</option>
-				</select>
+		<div id="menus" class="menus inlineBlock">
+			<div id="row1" class="row">
+				<div id="skin" class="option skin" >
+					Skin Color
+					<select name="skinSelect" class="dropdown">
+						<option value="white">White</option>
+						<option value="tan">Tan</option>
+						<option value="sunburnt">Sunburnt</option>
+						<option value="black">Black</option>
+						<option value="alien">Alien</option>
+						<option value="infected">Infected</option>
+					</select>
+				</div>
+				<div id="hairType" class="option hairType">
+					Hair Type
+					<select name="hairTypeSelect" class="dropdown">
+						<option value="puff">Puff</option>
+						<option value="classic">Trim</option>
+						<option value="tall">Tall</option>
+						<option value="afro">Afro</option>
+					</select>
+				</div>
 			</div>
-			<div id="hairType" class="option hairType">
-            	Hair Type
-				<select name="hairTypeSelect" class="dropdown">
-					<option value="puff">Puff</option>
-					<option value="classic">Trim</option>
-					<option value="tall">Tall</option>
-					<option value="afro">Afro</option>
-				</select>
+			<div id="row2" class="row">
+				<div id="hairColor" class="option hairColor">
+					Hair Color
+					<select name="hairColorSelect" class="dropdown">
+						<option value="brown">Brown</option>
+						<option value="black">Black</option>
+						<option value="ginger">Ginger</option>
+						<option value="gray">Gray</option>
+						<option value="darkGray">Dark Gray</option>
+						<option value="blond">Blond</option>
+					</select>
+				</div>
+				<div id="backHair" class="optionBackHair backHair">
+					Back Hair
+					<form>
+						<label for="yesTickBox" class="tickBoxLabel">Yes</label>
+							<input type="radio" id="yesTickBox" name="backHairTickBox" value="yes">
+						<label for="noTickbox" class="tickBoxLabel">No</label>
+							<input type="radio" id="noTickBox" name="backHairTickBox" value="no">
+					</form>
+				</div>
 			</div>
-			<div id="hairColor" class="option hairColor">
-            	Hair Type
-				<select name="hairColorSelect" class="dropdown">
-					<option value="brown">Brown</option>
-					<option value="black">Black</option>
-					<option value="ginger">Ginger</option>
-					<option value="gray">Gray</option>
-					<option value="darkGray">Dark Gray</option>
-					<option value="blond">Blond</option>
-				</select>
+			<div id="row3" class="row">
+				<div id="beardType" class="option beardType">
+					Beard Type
+					<select name="beardTypeSelect" class="dropdown">
+						<option value="none">None</option>
+						<option value="trim">Classic</option>
+						<option value="full">Full</option>
+						<option value="goatie">Goatie</option>
+					</select>
+				</div>
+				<div id="beardColor" class="option beardColor">
+					Beard Color
+					<select name="beardColorSelect" class="dropdown">
+						<option value="brown">Brown</option>
+						<option value="black">Black</option>
+						<option value="ginger">Ginger</option>
+						<option value="gray">Gray</option>
+						<option value="darkGray">Dark Gray</option>
+						<option value="blond">Blond</option>
+					</select>
+				</div>
 			</div>
-			<div id="backHair" class="optionBackHair backHair">
-            	Back Hair
-				<form>
-					<label for="yesTickBox" class="tickBoxLabel">Yes</label>
-						<input type="radio" id="yesTickBox" name="backHairTickBox" value="yes">
-					<label for="noTickbox" class="tickBoxLabel">No</label>
-						<input type="radio" id="noTickBox" name="backHairTickBox" value="no">
-				</form>
+			<div id="row4" class="row">
+				<div id="hatType" class="option hatType">
+					Hat Type
+					<select name="hatTypeSelect" class="dropdown">
+						<option value="none">None</option>
+						<option value="classic">Classic</option>
+						<option value="long">Long</option>
+						<option value="cap">Cap</option>
+						<option value="bandana">Bandana</option>
+						<option value="headband">Headband</option>
+					</select>
+				</div>
+				<div id="hatColor" class="option hatColor">
+					Hat Color
+					<select name="hatColorSelect" class="dropdown">
+						<option value="black">Black</option>
+						<option value="blue">Blue</option>
+						<option value="brown">Brown</option>
+						<option value="darkBrown">Dark Brown</option>
+						<option value="gray">Gray</option>
+						<option value="green">Green</option>
+						<option value="'lightBrown">Light Brown</option>
+						<option value="yellow">Yellow</option>
+					</select>
+				</div>
 			</div>
-			<div id="beardType" class="option beardType">
-            	Beard Type
-				<select name="beardTypeSelect" class="dropdown">
-                	<option value="none">None</option>
-					<option value="trim">Classic</option>
-					<option value="full">Full</option>
-					<option value="goatie">Goatie</option>
-				</select>
+			<div id="row5" class="row">
+				<div id="clothesType" class="option clothesType">
+					Clothes Type
+					<select name="clothesTypeSelect" class="dropdown">
+						<option value="triggerman">Triggerman</option>
+						<option value="hunter">Hunter</option>
+						<option value="runNGun">Run N Gun</option>
+						<option value="sprayNPray">Spray N Pray</option>
+						<option value="vince">Vince</option>
+						<option value="detective">Detective</option>
+						<option value="marksman">Marksman</option>
+						<option value="rocketeer">Rocketeer</option>
+						<option value="agent">Agent</option>
+						<option value="commando">Commando</option>
+						<option value="bowman">Bowman</option>
+						<option value="deagler">Deagler</option>
+						<option value="runner">Runner</option>
+						<option value="trooper">Trooper</option>
+					</select>
+				</div>
+				<div id="clothesColor" class="option clothesColor">
+					Clothes Color
+					<select name="clothesColorSelect" class="dropdown">
+						<option value="black">Black</option>
+						<option value="brown">Brown</option>
+						<option value="blue">Blue</option>
+						<option value="green">Green</option>
+						<option value="darkBlue">Dark Blue</option>
+						<option value="lightBrown">Light Brown</option>
+						<option value="darkGray">Dark Gray</option>
+						<option value="yellow">Yellow</option>
+						<option value="lightGray">Light Gray</option>
+						<option value="white">White</option>
+					</select>
+				</div>
 			</div>
-			<div id="beardColor" class="option beardColor">
-            	Beard Color
-				<select name="beardColorSelect" class="dropdown">
-					<option value="brown">Brown</option>
-					<option value="black">Black</option>
-					<option value="ginger">Ginger</option>
-					<option value="gray">Gray</option>
-					<option value="darkGray">Dark Gray</option>
-					<option value="blond">Blond</option>
-				</select>
-			</div>
-			<div id="hatType" class="option hatType">
-            	Hat Type
-				<select name="hatTypeSelect" class="dropdown">
-                	<option value="none">None</option>
-					<option value="classic">Classic</option>
-					<option value="long">Long</option>
-					<option value="cap">Cap</option>
-					<option value="bandana">Bandana</option>
-					<option value="headband">Headband</option>
-				</select>
-			</div>
-			<div id="hatColor" class="option hatColor">
-            	Hat Color
-				<select name="hatColorSelect" class="dropdown">
-					<option value="black">Black</option>
-					<option value="blue">Blue</option>
-					<option value="brown">Brown</option>
-					<option value="darkBrown">Dark Brown</option>
-					<option value="gray">Gray</option>
-					<option value="green">Green</option>
-					<option value="'lightBrown">Light Brown</option>
-					<option value="yellow">Yellow</option>
-				</select>
-			</div>
-			<div id="clothesType" class="option clothesType">
-            	Clothes Type
-				<select name="clothesTypeSelect" class="dropdown">
-					<option value="triggerman">Triggerman</option>
-					<option value="hunter">Hunter</option>
-					<option value="runNGun">Run N Gun</option>
-					<option value="sprayNPray">Spray N Pray</option>
-					<option value="vince">Vince</option>
-					<option value="detective">Detective</option>
-					<option value="marksman">Marksman</option>
-					<option value="rocketeer">Rocketeer</option>
-					<option value="agent">Agent</option>
-					<option value="commando">Commando</option>
-					<option value="bowman">Bowman</option>
-					<option value="deagler">Deagler</option>
-					<option value="runner">Runner</option>
-					<option value="trooper">Trooper</option>
-				</select>
-			</div>
-			<div id="clothesColor" class="option clothesColor">
-            	Clothes Color
-				<select name="clothesColorSelect" class="dropdown">
-					<option value="black">Black</option>
-					<option value="brown">Brown</option>
-					<option value="blue">Blue</option>
-					<option value="green">Green</option>
-					<option value="darkBlue">Dark Blue</option>
-					<option value="lightBrown">Light Brown</option>
-					<option value="darkGray">Dark Gray</option>
-					<option value="yellow">Yellow</option>
-					<option value="lightGray">Light Gray</option>
-					<option value="white">White</option>
-				</select>
-			</div>
-			<div id="accentColor" class="option accentColor">
-            	Accent Color
-				<select name="accentColorSelect" class="dropdown">
-					<option value="red">Red</option>
-					<option value="lime">Lime</option>
-					<option value="black">Black</option>
-					<option value="blue">Blue</option>
-					<option value="cyan">Cyan</option>
-				</select>
+			<div id="row6" class="row">
+				<div id="accentColor" class="option accentColor">
+					Accent Color
+					<select name="accentColorSelect" class="dropdown">
+						<option value="red">Red</option>
+						<option value="lime">Lime</option>
+						<option value="black">Black</option>
+						<option value="blue">Blue</option>
+						<option value="cyan">Cyan</option>
+					</select>
+				</div>
 			</div>
 		</div>
 	</body>

@@ -1,5 +1,17 @@
 .menus {
     font-family: "FFF Forward Regular";
+	display: inline-block;
+	float: right;
+}
+
+.avatar {
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.row {
+	float: none;
 }
 
 .option {
@@ -20,6 +32,7 @@
     width: 120px;
     background-color: rgba(0,0,0,.3);
     text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020;
+	float: left;
 }
 
 .optionBackHair {
