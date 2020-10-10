@@ -6,13 +6,19 @@
 	<title>Krunker Avatar Maker by Haptikal</title>
 	<body>
 		<div id="avatar" class="avatar">
-			<img src="https://brianperry.co.nz/wp-content/uploads/2018/01/400x400.png" class="image" alt="400x400">
+			<img src="assets/skin/white.png" class="image imageSkin" id="imageSkin">
+			<img src="assets/hair/puff/brown.png" class="image imageHair" id="imageHair">
+			<img src="assets/hair/back/brown.png" class="image imageBackHair" id="imageBackHair">
+			<img src="assets/none.png" class="image imageHat" id="imageHat">
+			<img src="assets/clothes/triggerman/black.png" class="image imageClothes" id="imageClothes">
+			<img src="assets/accent/triggerman/red.png" class="image imageAccent" id="imageAccent">
+			<img src="assets/none.png" class="image imageBeard" id="imageBeard">
         </div>
 		<div id="menus" class="menus">
 			<div id="row1" class="row">
-				<div id="skin" class="optionTop skin" >
+				<div id="skin" class="optionTop skin">
 					Skin Color
-					<select name="skinSelect" class="dropdown">
+					<select id="skinSelect" class="dropdown" onchange="skin()">
 						<option value="white">White</option>
 						<option value="tan">Tan</option>
 						<option value="sunburnt">Sunburnt</option>
@@ -23,7 +29,7 @@
 				</div>
 				<div id="hairType" class="optionTop hairType">
 					Hair Type
-					<select name="hairTypeSelect" class="dropdown">
+					<select id="hairTypeSelect" class="dropdown" onchange="hairType()">
 						<option value="puff">Puff</option>
 						<option value="classic">Trim</option>
 						<option value="tall">Tall</option>
@@ -34,7 +40,7 @@
 			<div id="row2" class="row">
 				<div id="hairColor" class="option hairColor">
 					Hair Color
-					<select name="hairColorSelect" class="dropdown">
+					<select id="hairColorSelect" class="dropdown" onchange="hairColor()">
 						<option value="brown">Brown</option>
 						<option value="black">Black</option>
 						<option value="ginger">Ginger</option>
@@ -47,16 +53,16 @@
 					Back Hair
 					<form>
 						<label for="yesTickBox" class="tickBoxLabel">Yes</label>
-							<input type="radio" id="yesTickBox" name="backHairTickBox" value="yes">
+							<input type="radio" id="yesTickBox" name="backHairTickBox" value="yes" onchange="backHair()">
 						<label for="noTickbox" class="tickBoxLabel">No</label>
-							<input type="radio" id="noTickBox" name="backHairTickBox" value="no">
+							<input type="radio" id="noTickBox" name="backHairTickBox" value="no" onchange="backHair()">
 					</form>
 				</div>
 			</div>
 			<div id="row3" class="row">
 				<div id="beardType" class="option beardType">
 					Beard Type
-					<select name="beardTypeSelect" class="dropdown">
+					<select id="beardTypeSelect" class="dropdown" onchange="beardType()">
 						<option value="none">None</option>
 						<option value="trim">Classic</option>
 						<option value="full">Full</option>
@@ -65,7 +71,7 @@
 				</div>
 				<div id="beardColor" class="option beardColor">
 					Beard Color
-					<select name="beardColorSelect" class="dropdown">
+					<select id="beardColorSelect" class="dropdown" onchange="beardColor()">
 						<option value="brown">Brown</option>
 						<option value="black">Black</option>
 						<option value="ginger">Ginger</option>
@@ -78,7 +84,7 @@
 			<div id="row4" class="row">
 				<div id="hatType" class="option hatType">
 					Hat Type
-					<select name="hatTypeSelect" class="dropdown">
+					<select id="hatTypeSelect" class="dropdown" onchange="hatType()">
 						<option value="none">None</option>
 						<option value="classic">Classic</option>
 						<option value="long">Long</option>
@@ -89,7 +95,7 @@
 				</div>
 				<div id="hatColor" class="option hatColor">
 					Hat Color
-					<select name="hatColorSelect" class="dropdown">
+					<select id="hatColorSelect" class="dropdown" onchange="hatColor()">
 						<option value="black">Black</option>
 						<option value="blue">Blue</option>
 						<option value="brown">Brown</option>
@@ -104,7 +110,7 @@
 			<div id="row5" class="row">
 				<div id="clothesType" class="option clothesType">
 					Clothes Type
-					<select name="clothesTypeSelect" class="dropdown">
+					<select id="clothesTypeSelect" class="dropdown" onchange="clothesType()">
 						<option value="triggerman">Triggerman</option>
 						<option value="hunter">Hunter</option>
 						<option value="runNGun">Run N Gun</option>
@@ -123,7 +129,7 @@
 				</div>
 				<div id="clothesColor" class="option clothesColor">
 					Clothes Color
-					<select name="clothesColorSelect" class="dropdown">
+					<select id="clothesColorSelect" class="dropdown" onchange="clothesColor()">
 						<option value="black">Black</option>
 						<option value="brown">Brown</option>
 						<option value="blue">Blue</option>
@@ -140,7 +146,7 @@
 			<div id="row6" class="row">
 				<div id="accentColor" class="option accentColor">
 					Accent Color
-					<select name="accentColorSelect" class="dropdown">
+					<select id="accentColorSelect" class="dropdown" onchange="accentColor()">
 						<option value="red">Red</option>
 						<option value="lime">Lime</option>
 						<option value="black">Black</option>
@@ -150,5 +156,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="js/code.js"></script>
 	</body>
 </html>
