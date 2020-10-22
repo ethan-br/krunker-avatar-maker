@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Gamefont;
+    font-family: "Gamefont";
     src: url("css/fonts/gamefont.ttf") format("truetype");
 	src: url("css/fonts/gamefont.woff") format("woff");
 	src: url("css/fonts/gamefont.woff2") format("woff2");
 }
 
 .menus {
-	font-family: Gamefont;
+	font-family: "Gamefont";
 	float: right;
 	display: inline-block;
 }
@@ -29,7 +29,7 @@
 }
 
 .optionTop {
-	font-family: Gamefont;
+	font-family: "Gamefont";
 	font-size: 10px;
     color: #fff;
     text-align: center;
@@ -50,7 +50,7 @@
 }
 
 .option {
-	font-family: Gamefont;
+	font-family: "Gamefont";
 	font-size: 10px;
     color: #fff;
     text-align: center;
@@ -72,7 +72,7 @@
 }
 
 .optionBackHair {
-	font-family: Gamefont;
+	font-family: "Gamefont";
 	font-size: 10px;
     color: #fff;
     text-align: center;
@@ -96,7 +96,7 @@
 .dropdown {
 	padding: 0px;
     color: #595959;
-	font-family: Gamefont;
+	font-family: "Gamefont";
 	background-color: #b2b2b2;
 	border-radius: 4px;
 	border: 2px solid rgba(0,0,0,.2);
@@ -104,7 +104,7 @@
 }
 
 .tickBoxLabel {
-	font-family: Gamefont;
+	font-family: "Gamefont";
 	 color: #595959;
 	 text-shadow: none;
 	 font-size: 11px;
