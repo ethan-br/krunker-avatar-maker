@@ -16,6 +16,10 @@ function skin() {
 }
 
 function hairType() {
+	var hairType = document.getElementById("hairTypeSelect");
+	var hairColor = document.getElementById("hairColorSelect");
+	if (hairColor.value == "black"){
+		
 	console.log("hair type changed")
 }
 
