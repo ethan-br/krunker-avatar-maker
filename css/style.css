@@ -13,13 +13,6 @@
 
 .menus {
 	font-family: 'FFF Forward';
-    src: url("css/fonts/gamefont.ttf") format("truetype");
-	src: url("css/fonts/gamefont.woff") format("woff");
-	src: url("css/fonts/gamefont.woff2") format("woff2");
-}
-
-.menus {
-	font-family: 'FFF Forward';
 	float: right;
 	display: inline-block;
 }
@@ -28,6 +21,8 @@
 	float: left;
 	margin-left: 2px;
 	margin-right: 2px;
+	padding-top: 41px;
+	padding-bottom: 41px;
 	position: relative;
 }
 
