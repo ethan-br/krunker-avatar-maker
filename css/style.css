@@ -13,6 +13,13 @@
 
 .menus {
 	font-family: 'FFF Forward';
+    src: url("css/fonts/gamefont.ttf") format("truetype");
+	src: url("css/fonts/gamefont.woff") format("woff");
+	src: url("css/fonts/gamefont.woff2") format("woff2");
+}
+
+.menus {
+	font-family: 'FFF Forward';
 	float: right;
 	display: inline-block;
 }
@@ -111,7 +118,7 @@
 
 .tickBoxLabel {
 	font-family: 'FFF Forward';
-	 color: #595959;
-	 text-shadow: none;
-	 font-size: 11px;
+	color: #595959;
+	text-shadow: none;
+	font-size: 11px;
 }
