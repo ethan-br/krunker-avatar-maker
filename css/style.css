@@ -19,10 +19,10 @@
 
 .avatar {
 	float: left;
-	margin-left: 2px;
+	margin-left: px;
 	margin-right: 2px;
-	padding-top: 41px;
-	padding-bottom: 41px;
+	margin-top: 41px;
+	margin-bottom: 41px;
 	position: relative;
 }
 
