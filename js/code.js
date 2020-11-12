@@ -1,7 +1,6 @@
-console.log("window has loaded");
+console.log("Window has loaded.");
 var hairTypeValue = document.getElementById("hairTypeSelect").value;
 var hairColorValue = document.getElementById("hairColorSelect").value;
-var backHairValue = document.getElementById("___").value;
 var beardTypeValue = document.getElementById("beardTypeSelect").value;
 var beatdColorValue = document.getElementById("beardColorSelect").value;
 var hatTypeValue = document.getElementById("hatTypeSelect").value;
@@ -120,11 +119,118 @@ function hairType() {
 }
 
 function hairColor() {
-	console.log("hair color changed")
+	var hairColorValue = document.getElementById("hairColorSelect").value;
+	var hairTypeValue = document.getElementById("hairTypeSelect").value;
+	if (hairColorValue == "black"){
+		if (hairTypeValue == "trim"){
+			document.getElementById("imageHair").src = "assets/hair/trim/black.png"
+		}
+		else if (hairTypeValue == "tall"){
+			document.getElementById("imageHair").src = "assets/hair/tall/black.png"
+		}
+		else if (hairTypeValue == "afro"){
+			document.getElementById("imageHair").src = "assets/hair/afro/black.png"
+		}
+		else{
+			document.getElementById("imageHair").src = "assets/hair/puff/black.png"
+		}
+		document.getElementById("imageBackHair").src = "assets/hair/back/black.png"
+	}
+	else if (hairColorValue == "ginger"){
+		if (hairTypeValue == "trim"){
+			document.getElementById("imageHair").src = "assets/hair/trim/ginger.png"
+		}
+		else if (hairTypeValue == "tall"){
+			document.getElementById("imageHair").src = "assets/hair/tall/ginger.png"
+		}
+		else if (hairTypeValue == "afro"){
+			document.getElementById("imageHair").src = "assets/hair/afro/ginger.png"
+		}
+		else{
+			document.getElementById("imageHair").src = "assets/hair/puff/ginger.png"
+		}
+		document.getElementById("imageBackHair").src = "assets/hair/back/ginger.png"
+	}
+	else if (hairColorValue == "gray"){
+		if (hairTypeValue == "trim"){
+			document.getElementById("imageHair").src = "assets/hair/trim/gray.png"
+		}
+		else if (hairTypeValue == "tall"){
+			document.getElementById("imageHair").src = "assets/hair/tall/gray.png"
+		}
+		else if (hairTypeValue == "afro"){
+			document.getElementById("imageHair").src = "assets/hair/afro/gray.png"
+		}
+		else{
+			document.getElementById("imageHair").src = "assets/hair/puff/gray.png"
+		}
+		document.getElementById("imageBackHair").src = "assets/hair/back/gray.png"
+	}
+	else if (hairColorValue == "darkGray"){
+		if (hairTypeValue == "trim"){
+			document.getElementById("imageHair").src = "assets/hair/trim/dark_gray.png"
+		}
+		else if (hairTypeValue == "tall"){
+			document.getElementById("imageHair").src = "assets/hair/tall/dark_gray.png"
+		}
+		else if (hairTypeValue == "afro"){
+			document.getElementById("imageHair").src = "assets/hair/afro/dark_gray.png"
+		}
+		else{
+			document.getElementById("imageHair").src = "assets/hair/puff/dark_gray.png"
+		}
+		document.getElementById("imageBackHair").src = "assets/hair/back/dark_gray.png"
+	}
+	else if (hairColorValue == "blond"){
+		if (hairTypeValue == "trim"){
+			document.getElementById("imageHair").src = "assets/hair/trim/blond.png"
+		}
+		else if (hairTypeValue == "tall"){
+			document.getElementById("imageHair").src = "assets/hair/tall/blond.png"
+		}
+		else if (hairTypeValue == "afro"){
+			document.getElementById("imageHair").src = "assets/hair/afro/blond.png"
+		}
+		else{
+			document.getElementById("imageHair").src = "assets/hair/puff/blond.png"
+		}
+		document.getElementById("imageBackHair").src = "assets/hair/back/blond.png"
+	}
+	else{
+		if (hairTypeValue == "trim"){
+			document.getElementById("imageHair").src = "assets/hair/trim/brown.png"
+		}
+		else if (hairTypeValue == "tall"){
+			document.getElementById("imageHair").src = "assets/hair/tall/brown.png"
+		}
+		else if (hairTypeValue == "afro"){
+			document.getElementById("imageHair").src = "assets/hair/afro/brown.png"
+		}
+		else{
+			document.getElementById("imageHair").src = "assets/hair/puff/brown.png"
+		}
+		document.getElementById("imageBackHair").src = "assets/hair/back/brown.png"
+	}
+	console.log("Hair color changed to " + hairColorValue + ".")
 }
 
 function backHair() {
-	console.log("back hair changed")
+	var hairColorValue = document.getElementById("hairColorSelect").value;
+	if(document.getElementById('yesTickBox').checked) {
+		var imageBackHair = document.getElementById('imageBackHair');
+		imageBackHair.style.visibility = 'visible';
+		console.log("Back hair turned on.")
+	}
+	else if(document.getElementById('noTickBox').checked) {
+		var imageBackHair = document.getElementById('imageBackHair');
+		imageBackHair.style.visibility = 'hidden';
+		console.log("Back hair turned off.")
+	}
+	else{
+		var imageBackHair = document.getElementById('imageBackHair');
+		imageBackHair.style.visibility = 'visible';
+		console.log("Back hair turned on.")
+	}
 }
 
 function beardType() {
