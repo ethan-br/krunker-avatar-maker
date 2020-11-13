@@ -234,11 +234,162 @@ function backHair() {
 }
 
 function beardType() {
-	console.log("beard type changed")
+	var beardTypeValue = document.getElementById("beardTypeSelect").value;
+	var beardColorValue = document.getElementById("beardColorSelect").value;
+	if (beardTypeValue == "trim") {
+		if (beardColorValue == "black") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/black.png"
+		}
+		else if (beardColorValue == "ginger") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/ginger.png"
+		}
+		else if (beardColorValue == "gray") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/gray.png"
+		}
+		else if (beardColorValue == "darkGray") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/dark_gray.png"
+		}
+		else if (beardColorValue == "blond") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/blond.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/beard/trim/brown.png"
+		}
+	}
+	else if (beardTypeValue == "full") {
+		if (beardColorValue == "black") {
+			document.getElementById("imageBeard").src = "assets/beard/full/black.png"
+		}
+		else if (beardColorValue == "ginger") {
+			document.getElementById("imageBeard").src = "assets/beard/full/ginger.png"
+		}
+		else if (beardColorValue == "gray") {
+			document.getElementById("imageBeard").src = "assets/beard/full/gray.png"
+		}
+		else if (beardColorValue == "darkGray") {
+			document.getElementById("imageBeard").src = "assets/beard/full/dark_gray.png"
+		}
+		else if (beardColorValue == "blond") {
+			document.getElementById("imageBeard").src = "assets/beard/full/blond.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/beard/full/brown.png"
+		}
+	}
+	else if (beardTypeValue == "goatie") {
+		if (beardColorValue == "black") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/black.png"
+		}
+		else if (beardColorValue == "ginger") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/ginger.png"
+		}
+		else if (beardColorValue == "gray") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/gray.png"
+		}
+		else if (beardColorValue == "darkGray") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/dark_gray.png"
+		}
+		else if (beardColorValue == "blond") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/blond.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/brown.png"
+		}
+	}
+	else {
+		document.getElementById("imageBeard").src = "assets/none.png"
+	}
+	console.log("Beard type changed to " + beardTypeValue + ".")
 }
 
 function beardColor() {
-	console.log("beard color changed")
+	var beardColorValue = document.getElementById("beardColorSelect").value;
+	var beardTypeValue = document.getElementById("beardTypeSelect").value;
+	if (beardColorValue == "black") {
+		if (beardTypeValue == "trim") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/black.png"
+		}
+		else if (beardTypeValue == "full") {
+			document.getElementById("imageBeard").src = "assets/beard/full/black.png"
+		}
+		else if (beardTypeValue == "goatie") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/black.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/none.png"
+		}
+	}
+	else if (beardColorValue == "ginger") {
+		if (beardTypeValue == "trim") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/ginger.png"
+		}
+		else if (beardTypeValue == "full") {
+			document.getElementById("imageBeard").src = "assets/beard/full/ginger.png"
+		}
+		else if (beardTypeValue == "goatie") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/ginger.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/none.png"
+		}
+	}
+	else if (beardColorValue == "gray") {
+		if (beardTypeValue == "trim") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/gray.png"
+		}
+		else if (beardTypeValue == "full") {
+			document.getElementById("imageBeard").src = "assets/beard/full/gray.png"
+		}
+		else if (beardTypeValue == "goatie") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/gray.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/none.png"
+		}
+	}
+	else if (beardColorValue == "darkGray") {
+		if (beardTypeValue == "trim") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/dark_gray.png"
+		}
+		else if (beardTypeValue == "full") {
+			document.getElementById("imageBeard").src = "assets/beard/full/dark_gray.png"
+		}
+		else if (beardTypeValue == "goatie") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/dark_gray.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/none.png"
+		}
+	}
+	else if (beardColorValue == "blond") {
+		if (beardTypeValue == "trim") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/blond.png"
+		}
+		else if (beardTypeValue == "full") {
+			document.getElementById("imageBeard").src = "assets/beard/full/blond.png"
+		}
+		else if (beardTypeValue == "goatie") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/blond.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/none.png"
+		}
+	}
+	else {
+		if (beardTypeValue == "trim") {
+			document.getElementById("imageBeard").src = "assets/beard/trim/brown.png"
+		}
+		else if (beardTypeValue == "full") {
+			document.getElementById("imageBeard").src = "assets/beard/full/brown.png"
+		}
+		else if (beardTypeValue == "goatie") {
+			document.getElementById("imageBeard").src = "assets/beard/goatie/brown.png"
+		}
+		else {
+			document.getElementById("imageBeard").src = "assets/none.png"
+		}
+	}
+	console.log("Beard color changed to " + beardColorValue + ".")
 }
 
 function hatType() {
