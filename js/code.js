@@ -35,6 +35,7 @@ function skin() {
 function hairType() {
 	var hairTypeValue = document.getElementById("hairTypeSelect").value;
 	var hairColorValue = document.getElementById("hairColorSelect").value;
+	var hatTypeValue = document.getElementById("hatTypeSelect").value;
 	if (hairTypeValue == "trim"){
 		if (hairColorValue == "black"){
 			document.getElementById("imageHair").src = "assets/hair/trim/black.png"
@@ -393,21 +394,525 @@ function beardColor() {
 }
 
 function hatType() {
-	console.log("hat type changed")
+	var hatTypeValue = document.getElementById("hatTypeSelect").value;
+	var hatColorValue = document.getElementById("hatColorSelect").value;
+	var hairTypeValue = document.getElementById("hairTypeSelect").value;
+	if (hairTypeValue != "none") {
+		imageHat.style.visibility = 'visible';
+		if (hatTypeValue == "classic") {
+			if (hairTypeValue == "puff" || "afro") {
+				imageHair.style.visibility = 'hidden';
+			}
+			else {
+				imageHair.style.visibility = 'visible';
+			}
+			if (hatColorValue == "blue") {
+				document.getElementById("imageHat").src = "assets/hat/classic/blue.png"
+			}
+			else if (hatColorValue == "brown") {
+				document.getElementById("imageHat").src = "assets/hat/classic/brown.png"
+			}
+			else if (hatColorValue == "darkBrown") {
+				document.getElementById("imageHat").src = "assets/hat/classic/dark_brown.png"
+			}
+			else if (hatColorValue == "gray") {
+				document.getElementById("imageHat").src = "assets/hat/classic/gray.png"
+			}
+			else if (hatColorValue == "green") {
+				document.getElementById("imageHat").src = "assets/hat/classic/green.png"
+			}
+			else if (hatColorValue == "lightBrown") {
+				document.getElementById("imageHat").src = "assets/hat/classic/light_brown.png"
+			}
+			else if (hatColorValue == "yellow") {
+				document.getElementById("imageHat").src = "assets/hat/classic/yellow.png"
+			}
+			else {
+				document.getElementById("imageHat").src = "assets/hat/classic/black.png"
+			}
+		}
+		else if (hatTypeValue == "long") {
+			if (hairTypeValue == "puff" || "afro") {
+				imageHair.style.visibility = 'hidden';
+			}
+			else {
+				imageHair.style.visibility = 'visible';
+			}
+			if (hatColorValue == "blue") {
+				document.getElementById("imageHat").src = "assets/hat/long/blue.png"
+			}
+			else if (hatColorValue == "brown") {
+				document.getElementById("imageHat").src = "assets/hat/long/brown.png"
+			}
+			else if (hatColorValue == "darkBrown") {
+				document.getElementById("imageHat").src = "assets/hat/long/dark_brown.png"
+			}
+			else if (hatColorValue == "gray") {
+				document.getElementById("imageHat").src = "assets/hat/long/gray.png"
+			}
+			else if (hatColorValue == "green") {
+				document.getElementById("imageHat").src = "assets/hat/long/green.png"
+			}
+			else if (hatColorValue == "lightBrown") {
+				document.getElementById("imageHat").src = "assets/hat/long/light_brown.png"
+			}
+			else if (hatColorValue == "yellow") {
+				document.getElementById("imageHat").src = "assets/hat/long/yellow.png"
+			}
+			else {
+				document.getElementById("imageHat").src = "assets/hat/long/black.png"
+			}
+		}
+		else if (hatTypeValue == "cap") {
+			if (hairTypeValue == "puff" || "afro") {
+				imageHair.style.visibility = 'hidden';
+			}
+			else {
+				imageHair.style.visibility = 'visible';
+			}
+			if (hatColorValue == "blue") {
+				document.getElementById("imageHat").src = "assets/hat/cap/blue.png"
+			}
+			else if (hatColorValue == "brown") {
+				document.getElementById("imageHat").src = "assets/hat/cap/brown.png"
+			}
+			else if (hatColorValue == "darkBrown") {
+				document.getElementById("imageHat").src = "assets/hat/cap/dark_brown.png"
+			}
+			else if (hatColorValue == "gray") {
+				document.getElementById("imageHat").src = "assets/hat/cap/gray.png"
+			}
+			else if (hatColorValue == "green") {
+				document.getElementById("imageHat").src = "assets/hat/cap/green.png"
+			}
+			else if (hatColorValue == "lightBrown") {
+				document.getElementById("imageHat").src = "assets/hat/cap/light_brown.png"
+			}
+			else if (hatColorValue == "yellow") {
+				document.getElementById("imageHat").src = "assets/hat/cap/yellow.png"
+			}
+			else {
+				document.getElementById("imageHat").src = "assets/hat/cap/black.png"
+			}
+		}
+		else if (hatTypeValue == "bandana") {
+			if (hairTypeValue == "puff" || "afro") {
+				imageHair.style.visibility = 'hidden';
+			}
+			else {
+				imageHair.style.visibility = 'visible';
+			}
+			if (hatColorValue == "blue") {
+				document.getElementById("imageHat").src = "assets/hat/bandana/blue.png"
+			}
+			else if (hatColorValue == "brown") {
+				document.getElementById("imageHat").src = "assets/hat/bandana/brown.png"
+			}
+			else if (hatColorValue == "darkBrown") {
+				document.getElementById("imageHat").src = "assets/hat/bandana/dark_brown.png"
+			}
+			else if (hatColorValue == "gray") {
+				document.getElementById("imageHat").src = "assets/hat/bandana/gray.png"
+			}
+			else if (hatColorValue == "green") {
+				document.getElementById("imageHat").src = "assets/hat/bandana/green.png"
+			}
+			else if (hatColorValue == "lightBrown") {
+				document.getElementById("imageHat").src = "assets/hat/bandana/light_brown.png"
+			}
+			else if (hatColorValue == "yellow") {
+				document.getElementById("imageHat").src = "assets/hat/bandana/yellow.png"
+			}
+			else {
+				document.getElementById("imageHat").src = "assets/hat/bandana/black.png"
+			}
+		}
+		else if (hatTypeValue == "headband") {
+			if (hatColorValue == "blue") {
+				document.getElementById("imageHat").src = "assets/hat/headband/blue.png"
+			}
+			else if (hatColorValue == "brown") {
+				document.getElementById("imageHat").src = "assets/hat/headband/brown.png"
+			}
+			else if (hatColorValue == "darkBrown") {
+				document.getElementById("imageHat").src = "assets/hat/headband/dark_brown.png"
+			}
+			else if (hatColorValue == "gray") {
+				document.getElementById("imageHat").src = "assets/hat/headband/gray.png"
+			}
+			else if (hatColorValue == "green") {
+				document.getElementById("imageHat").src = "assets/hat/headband/green.png"
+			}
+			else if (hatColorValue == "lightBrown") {
+				document.getElementById("imageHat").src = "assets/hat/headband/light_brown.png"
+			}
+			else if (hatColorValue == "yellow") {
+				document.getElementById("imageHat").src = "assets/hat/headband/yellow.png"
+			}
+			else {
+				document.getElementById("imageHat").src = "assets/hat/headband/black.png"
+			}
+		}
+		else {
+			document.getElementById("imageHat").src = "assets/none.png"
+			imageHair.style.visibility = 'visible';
+		}
+	}
+	else {
+		imageHat.style.visibility = 'hidden';
+	}
+	console.log("Hat type changed to " + hatTypeValue + ".")
 }
 
 function hatColor() {
-	console.log("hat color changed")
+	var hatColorValue = document.getElementById("hatColorSelect").value;
+	var hatTypeValue = document.getElementById("hatTypeSelect").value;
+	var hairTypeValue = document.getElementById("hairTypeSelect").value;
+	if (hatTypeValue != "none") {
+		imageHair.style.visibility = 'visible';
+		if (hatColorValue == "blue") {
+			if (hatTypeValue == "long") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/long/blue.png"
+			}
+			else if (hatTypeValue == "cap") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/cap/blue.png"
+			}
+			else if (hatTypeValue == "bandana") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/bandana/blue.png"
+			}
+			else if (hatTypeValue == "headband") {
+				document.getElementById("imageHat").src = "assets/hat/headband/blue.png"
+			}
+			else {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/classic/blue.png"
+			}
+		}
+		else if (hatColorValue == "brown") {
+			if (hatTypeValue == "long") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/long/brown.png"
+			}
+			else if (hatTypeValue == "cap") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/cap/brown.png"
+			}
+			else if (hatTypeValue == "bandana") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/bandana/brown.png"
+			}
+			else if (hatTypeValue == "headband") {
+				document.getElementById("imageHat").src = "assets/hat/headband/brown.png"
+			}
+			else {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/classic/brown.png"
+			}
+		}
+		else if (hatColorValue == "darkBrown") {
+			if (hatTypeValue == "long") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/long/dark_brown.png"
+			}
+			else if (hatTypeValue == "cap") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/cap/dark_brown.png"
+			}
+			else if (hatTypeValue == "bandana") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/bandana/dark_brown.png"
+			}
+			else if (hatTypeValue == "headband") {
+				document.getElementById("imageHat").src = "assets/hat/headband/dark_brown.png"
+			}
+			else {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/classic/dark_brown.png"
+			}
+		}
+		else if (hatColorValue == "gray") {
+			if (hatTypeValue == "long") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/long/gray.png"
+			}
+			else if (hatTypeValue == "cap") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/cap/gray.png"
+			}
+			else if (hatTypeValue == "bandana") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/bandana/gray.png"
+			}
+			else if (hatTypeValue == "headband") {
+				document.getElementById("imageHat").src = "assets/hat/headband/gray.png"
+			}
+			else {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/classic/gray.png"
+			}
+		}
+		else if (hatColorValue == "green") {
+			if (hatTypeValue == "long") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/long/green.png"
+			}
+			else if (hatTypeValue == "cap") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/cap/green.png"
+			}
+			else if (hatTypeValue == "bandana") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/bandana/green.png"
+			}
+			else if (hatTypeValue == "headband") {
+				document.getElementById("imageHat").src = "assets/hat/headband/green.png"
+			}
+			else {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/classic/green.png"
+			}
+		}
+		else if (hatColorValue == "lightBrown") {
+			if (hatTypeValue == "long") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/long/light_brown.png"
+			}
+			else if (hatTypeValue == "cap") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/cap/light_brown.png"
+			}
+			else if (hatTypeValue == "bandana") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/bandana/light_brown.png"
+			}
+			else if (hatTypeValue == "headband") {
+				document.getElementById("imageHat").src = "assets/hat/headband/light_brown.png"
+			}
+			else {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/classic/light_brown.png"
+			}
+		}
+		else if (hatColorValue == "yellow") {
+			if (hatTypeValue == "long") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/long/yellow.png"
+			}
+			else if (hatTypeValue == "cap") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/cap/yellow.png"
+			}
+			else if (hatTypeValue == "bandana") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/bandana/yellow.png"
+			}
+			else if (hatTypeValue == "headband") {
+				document.getElementById("imageHat").src = "assets/hat/headband/yellow.png"
+			}
+			else {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/classic/yellow.png"
+			}
+		}
+		else {
+			if (hatTypeValue == "long") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/long/black.png"
+			}
+			else if (hatTypeValue == "cap") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/cap/black.png"
+			}
+			else if (hatTypeValue == "bandana") {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/bandana/black.png"
+			}
+			else if (hatTypeValue == "headband") {
+				document.getElementById("imageHat").src = "assets/hat/headband/black.png"
+			}
+			else {
+				if (hairTypeValue ==  "puff" || "afro") {
+					imageHair.style.visibility = 'hidden';
+				}
+				else {
+					imageHair.style.visibility = 'visible';
+				}
+				document.getElementById("imageHat").src = "assets/hat/classic/black.png"
+			}
+		}
+	}
+	else {
+		imageHat.style.visibility = 'hidden';
+	}
+	console.log("Hat color changed to " + hatColorValue + ".")
 }
 
 function clothesType() {
-	console.log("clothes type changed")
+	console.log("Clothes type changed to " + clothesTypeValue + ".")
 }
 
 function clothesColor() {
-	console.log("clothes color changed")
+	console.log("Clothes color changed to " + clothesColorValue + ".")
 }
 
 function accentColor() {
-	console.log("accent changed")
+	console.log("Accent color changed to " + accentColorValue +  ".")
 }
