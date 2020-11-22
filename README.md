@@ -6,4 +6,3 @@ To-Do:
 - Download button
 - Reset button
 - Finalize alignment
-- Finish option logic
